@@ -4,7 +4,6 @@ from django.db import models
 
 from .validators import validate_username, validate_year
 
-
 MODEL_REPR_TEXT_SIZE = 100
 USERNAME_MAX_LEN = 150
 EMAIL_MAX_LEN = 254
