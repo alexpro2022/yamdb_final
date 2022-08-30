@@ -4,7 +4,6 @@ from .models import (
     Category, Comment, Genre, GenreTitle, Review, Title, User
 )
 
-
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'slug')
