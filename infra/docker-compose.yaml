@@ -10,8 +10,9 @@ services:
       - ./.env
   
   web:
-    build: ../api_yamdb
-    restart: always
+    # build: ../api_yamdb
+    # restart: always
+    image: alexpro1972/api_yamdb
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
