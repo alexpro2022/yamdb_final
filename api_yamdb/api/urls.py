@@ -1,11 +1,9 @@
 from django.urls import include, path
-
 from rest_framework.routers import DefaultRouter
 
-from .views import (
-    CategoryViewSet, CommentViewSet, GenreViewSet, ReviewViewSet,
-    TitleViewSet, UserViewSet, SignUpView, ObtainTokenView
-)
+from .views import (CategoryViewSet, CommentViewSet, GenreViewSet,
+                    ObtainTokenView, ReviewViewSet, SignUpView, TitleViewSet,
+                    UserViewSet)
 
 VERSION = 'v1'
 

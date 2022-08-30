@@ -5,31 +5,24 @@ from django.db import IntegrityError
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import (
-    filters, permissions, status, views, viewsets)
+from rest_framework import filters, permissions, status, views, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.serializers import ValidationError
 from rest_framework_simplejwt.tokens import AccessToken
+from reviews.models import (CONFIRMATION_CODE_SIZE, RESET_CONFIRMATION_CODE,
+                            Category, Genre, Review, Title, User)
 
 from api_yamdb.settings import FROM_EMAIL
-from reviews.models import (
-    Category, Genre, Review, Title, User,
-    CONFIRMATION_CODE_SIZE, RESET_CONFIRMATION_CODE)
+
 from .filters import TitlesFilter
 from .mixins import LCDViewSet
-from .permissions import IsAdmin, ReadOnly, IsAuthorOrStaffOrReadOnly
-from .serializers import (
-    CategorySerializer,
-    CommentSerializer,
-    GenreSerializer,
-    MeSerializer,
-    ReviewSerializer,
-    SignUpSerializer,
-    TitleReadSerializer,
-    TitleWriteSerializer,
-    JWTTokenSerializer,
-    UserSerializer)
+from .permissions import IsAdmin, IsAuthorOrStaffOrReadOnly, ReadOnly
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, JWTTokenSerializer, MeSerializer,
+                          ReviewSerializer, SignUpSerializer,
+                          TitleReadSerializer, TitleWriteSerializer,
+                          UserSerializer)
 
 
 class CategoryGenreViewSet(LCDViewSet):

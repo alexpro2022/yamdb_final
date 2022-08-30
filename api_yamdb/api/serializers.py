@@ -1,10 +1,9 @@
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 from rest_framework.generics import get_object_or_404
-
-from reviews.models import (
-    USERNAME_MAX_LEN, EMAIL_MAX_LEN, CONFIRMATION_CODE_SIZE,
-    Category, Comment, Genre, Review, Title, User)
+from reviews.models import (CONFIRMATION_CODE_SIZE, EMAIL_MAX_LEN,
+                            USERNAME_MAX_LEN, Category, Comment, Genre, Review,
+                            Title, User)
 from reviews.validators import ValidateUsernameMixin, validate_year
 
 
