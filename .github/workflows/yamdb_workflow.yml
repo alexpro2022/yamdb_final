@@ -15,7 +15,6 @@ jobs:
       # для развёртывания окружения Python
       uses: actions/setup-python@v2
       with:
-        # Выбор версии Python
         python-version: 3.7
     - name: Install dependencies
       run: |
@@ -48,6 +47,8 @@ jobs:
         # Пуш образа в Docker Hub 
         uses: docker/build-push-action@v2 
         with:
+          context: ./api_yamdb/
+          # file: api_yamdb/Dockerfile
           push: true
           tags: alexpro1972/api_yamdb:latest
 
