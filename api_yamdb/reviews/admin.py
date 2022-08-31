@@ -2,9 +2,6 @@ from django.contrib import admin
 
 from . import models
 
-# from .models import (
-#    Category, Comment, Genre, GenreTitle, Review, Title, User)
-
 
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
