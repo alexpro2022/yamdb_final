@@ -1,19 +1,15 @@
 # yamdb_final
 [![status](https://github.com/alexpro2022/yamdb_final/actions/workflows/yamdb_workflow_temp.yml/badge.svg)](https://github.com/alexpro2022/yamdb_final/actions)
-[![codecov](https://codecov.io/gh/alexpro2022/hw05_final/branch/master/graph/badge.svg?token=1ETL9DOJEB)](https://codecov.io/gh/alexpro2022/hw05_final)
+[![codecov](https://codecov.io/gh/alexpro2022/yamdb_final/branch/master/graph/badge.svg?token=L5AGH3TKOY)](https://codecov.io/gh/alexpro2022/yamdb_final)
 
 
 ## Технологии
 <!-- 1. Языки программирования, библиотеки и пакеты: -->
 [![Python](https://warehouse-camo.ingress.cmh1.psfhosted.org/7c5873f1e0f4375465dfebd35bf18f678c74d717/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f7072657474797461626c652e7376673f6c6f676f3d707974686f6e266c6f676f436f6c6f723d464645383733)](https://www.python.org/)
 [![Requests](https://img.shields.io/badge/-Requests:_HTTP_for_Humans™-464646?logo=Python)](https://pypi.org/project/requests/)
-[![Pillow](https://img.shields.io/badge/-Pillow-464646?logo=Python)](https://pypi.org/project/Pillow/)
-[![HTML](https://img.shields.io/badge/-HTML-464646?logo=HTML)](https://html.spec.whatwg.org/multipage/)
 <!-- 2. Тесты: -->
 [![Pytest](https://img.shields.io/badge/-Pytest-464646?logo=Pytest)](https://docs.pytest.org/en/latest/)
 [![Pytest-cov](https://img.shields.io/badge/-Pytest--cov-464646?logo=Pytest)](https://pytest-cov.readthedocs.io/en/latest/)
-[![Coverage](https://img.shields.io/badge/-Coverage-464646?logo=Python)](https://coverage.readthedocs.io/en/latest/)
-[![Faker](https://img.shields.io/badge/-Faker-464646?logo=Python)](https://pypi.org/project/Faker/)
 <!-- 3. Фреймворки, библиотеки и пакеты: -->
 [![Django](https://img.shields.io/badge/-Django-464646?logo=Django)](https://www.djangoproject.com/)
 [![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?logo=Django)](https://www.django-rest-framework.org/)
