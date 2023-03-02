@@ -172,21 +172,22 @@
   * собрать статику. 
 
 Команды внутри контейнеров выполняют посредством подкоманды:
-    ```
-	sudo docker-compose exec
-    ```
-    с её помощью можно выполнять произвольные команды в сервисах внутри контейнеров.
+
+```
+sudo docker-compose exec
+```
+с её помощью можно выполнять произвольные команды в сервисах внутри контейнеров.
 
 Выполните по очереди команды:
-    ```
-    sudo docker-compose exec web python manage.py migrate
-    sudo docker-compose exec web python manage.py load_all_data
-    sudo docker-compose exec web python manage.py collectstatic --no-input
-    sudo docker-compose exec web python manage.py createsuperuser
-    ```
 
-4. Проверьте работоспособность приложения:
-  * зайдите на http://<server_IP>/redoc/ и убедитесь, что страница отображается полностью: статика подгрузилась;
+```
+sudo docker-compose exec web python manage.py migrate
+sudo docker-compose exec web python manage.py load_all_data
+sudo docker-compose exec web python manage.py collectstatic --no-input
+sudo docker-compose exec web python manage.py createsuperuser
+```
+
+4. Проверьте работоспособность приложения - зайдите на http://<server_IP>/redoc/ и убедитесь, что страница отображается полностью: статика подгрузилась;
 
 [⬆️Оглавление](#оглавление)
 
