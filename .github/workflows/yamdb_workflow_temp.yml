@@ -34,7 +34,7 @@ jobs:
       uses: codecov/codecov-action@v3
       with:
         token: ${{ secrets.CODECOV_TOKEN }}   
-#------------------------------
+
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
