@@ -2,7 +2,12 @@
 [![status](https://github.com/alexpro2022/yamdb_final/actions/workflows/yamdb_workflow_temp.yml/badge.svg)](https://github.com/alexpro2022/yamdb_final/actions)
 [![codecov](https://codecov.io/gh/alexpro2022/yamdb_final/branch/master/graph/badge.svg?token=L5AGH3TKOY)](https://codecov.io/gh/alexpro2022/yamdb_final)
 
-Данный проект демонстрирует возможность автоматичекого развертывания другого проекта (api_yamdb) с помощью Docker на удаленном сервере в Yandex.Cloud.
+Данный проект демонстрирует возможность автоматичекого развертывания другого проекта (api_yamdb) с помощью Docker на удаленном сервере в Yandex.Cloud. 
+
+При этом реализуется принцип Continuous Integration и Continuous Deployment (CI/CD): 
+   * автоматический запуск тестов,
+   * обновление образов на Docker Hub,
+   * автоматический деплой на боевой сервер при пуше в главную ветку main.
 
 
 
@@ -114,8 +119,23 @@
 ### II. Github:
 1. Сделайте fork репозитория https://github.com/alexpro2022/yamdb_final.
 
-2. Отредактируйте значение secrets.HOST:
-    из вашего репозитория -> Settings -> Secrets -> Actions -> HOST -> Update -> укажите IP вашего сервера
+2. Создайте новые secrets, из вашего репозитория -> Actions -> Settings -> Secrets  -> Actions:
+    ```
+    DOCKER_USERNAME - 
+    DOCKER_PASSWORD - 
+    HOST - укажите IP вашего сервера
+    USER - 
+    SSH_KEY - 
+    PASSPHRASE - 
+    DB_ENGINE - 
+    DB_NAME - 
+    DB_HOST - 
+    DB_PORT - 
+    POSTGRES_USER - 
+    POSTGRES_PASSWORD - 
+    TELEGRAM_TO - 
+    TELEGRAM_TOKEN - 
+    ```
 
 
 ### III. Ваш компьютер:   
@@ -136,7 +156,7 @@
     git commit -m 'ваше сообщение'
     git push
     ```
-
+После пуша будет активирован процесс CI/CD и произойдет автоматический деплой на ваш сервер
 ### IV. Сервер:
 1. Войдите в домашнюю папку home/<username>/ на свой удаленный сервер в облаке.
 
@@ -167,6 +187,9 @@
 
 4. Проверьте работоспособность приложения:
   * зайдите на http://<server_IP>/redoc/ и убедитесь, что страница отображается полностью: статика подгрузилась;
+
+[⬆️Оглавление](#оглавление)
+
 
 
 ## Запуск: 
