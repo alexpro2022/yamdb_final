@@ -4,7 +4,7 @@
 
 Данный проект демонстрирует возможность автоматичекого развертывания другого проекта (api_yamdb) с помощью Docker на удаленном сервере в Yandex.Cloud. 
 
-При этом реализуется принцип Continuous Integration и Continuous Deployment (CI/CD): 
+При этом реализуется принцип Continuous Integration & Continuous Deployment (CI/CD): 
    * автоматический запуск тестов,
    * обновление образов на Docker Hub,
    * автоматический деплой на боевой сервер при пуше в главную ветку main.
@@ -20,20 +20,71 @@
 
 
 
-## Технологии
-<!-- 1. Языки программирования, библиотеки и пакеты: -->
+## Технологии:
+
+
+**Языки программирования и модули:**
+
 [![Python](https://warehouse-camo.ingress.cmh1.psfhosted.org/7c5873f1e0f4375465dfebd35bf18f678c74d717/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f7072657474797461626c652e7376673f6c6f676f3d707974686f6e266c6f676f436f6c6f723d464645383733)](https://www.python.org/)
-[![Requests](https://img.shields.io/badge/-Requests:_HTTP_for_Humans™-464646?logo=Python)](https://pypi.org/project/requests/)
-<!-- 2. Тесты: -->
-[![Pytest](https://img.shields.io/badge/-Pytest-464646?logo=Pytest)](https://docs.pytest.org/en/latest/)
-[![Pytest-cov](https://img.shields.io/badge/-Pytest--cov-464646?logo=Pytest)](https://pytest-cov.readthedocs.io/en/latest/)
-[![Coverage](https://img.shields.io/badge/-Coverage-464646?logo=Python)](https://coverage.readthedocs.io/en/latest/)
-<!-- 3. Фреймворки, библиотеки и пакеты: -->
+[![csv](https://img.shields.io/badge/-csv-464646?logo=python)](https://docs.python.org/3/library/csv.html)
+[![datetime](https://img.shields.io/badge/-datetime-464646?logo=python)](https://docs.python.org/3/library/datetime.html)
+[![os](https://img.shields.io/badge/-os-464646?logo=python)](https://docs.python.org/3/library/os.html)
+[![random](https://img.shields.io/badge/-random-464646?logo=python)](https://docs.python.org/3/library/random.html)
+[![re](https://img.shields.io/badge/-re-464646?logo=python)](https://docs.python.org/3/library/re.html)
+[![sys](https://img.shields.io/badge/-sys-464646?logo=python)](https://docs.python.org/3/library/sys.html)
+
+
+**Фреймворк, библиотеки и приложения:**
+
 [![Django](https://img.shields.io/badge/-Django-464646?logo=Django)](https://www.djangoproject.com/)
 [![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?logo=Django)](https://www.django-rest-framework.org/)
 [![Simple_JWT](https://img.shields.io/badge/-Simple_JWT-464646?logo=Django)](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
-<!-- 4. Базы данных: -->
+[![django-filter](https://img.shields.io/badge/-django--filter-464646?logo=Django)](https://pypi.org/project/django-filter/)
+
+
+**База данных:**
+
 [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-464646?logo=PostgreSQL)](https://www.postgresql.org/)
+
+
+**Контейнеризация:**
+
+[![docker](https://img.shields.io/badge/-Docker-464646?logo=docker)](https://www.docker.com/)
+[![docker_compose](https://img.shields.io/badge/-Docker%20Compose-464646?logo=docker)](https://docs.docker.com/compose/)
+
+
+**Серверные технологии:**
+
+[![Nginx](https://img.shields.io/badge/-NGINX-464646?logo=NGINX)](https://nginx.org/ru/)
+[![gunicorn](https://img.shields.io/badge/-gunicorn-464646?logo=gunicorn)](https://gunicorn.org/)
+
+
+**Тесты:**
+
+[![Pytest](https://img.shields.io/badge/-Pytest-464646?logo=Pytest)](https://docs.pytest.org/en/latest/)
+[![Pytest-cov](https://img.shields.io/badge/-Pytest--cov-464646?logo=Pytest)](https://pytest-cov.readthedocs.io/en/latest/)
+[![Coverage](https://img.shields.io/badge/-Coverage-464646?logo=Python)](https://coverage.readthedocs.io/en/latest/)
+
+
+**CI/CD:**
+
+[![GitHub](https://img.shields.io/badge/-GitHub-464646?logo=GitHub)](https://docs.github.com/en)
+[![GitHub_Actions](https://img.shields.io/badge/-GitHub_Actions-464646?logo=GitHub)](https://docs.github.com/en/actions)
+[![docker_hub](https://img.shields.io/badge/-Docker_Hub-464646?logo=docker)](https://hub.docker.com/)
+[![Yandex.Cloud](https://img.shields.io/badge/-Yandex.Cloud-464646?logo=Yandex)](https://cloud.yandex.ru/)
+[![Telegram](https://img.shields.io/badge/-Telegram-464646?logo=Telegram)](https://core.telegram.org/api)
+
+
+
+
+
+
+[![Requests](https://img.shields.io/badge/-Requests:_HTTP_for_Humans™-464646?logo=Python)](https://pypi.org/project/requests/)
+<!-- 2. Тесты: -->
+
+<!-- 3. Фреймворки, библиотеки и пакеты: -->
+
+<!-- 4. Базы данных: -->
 <!-- 5. CI/CD: -->
 [![GitHub](https://img.shields.io/badge/-GitHub-464646?logo=GitHub)](https://docs.github.com/en)
 [![GitHub_Actions](https://img.shields.io/badge/-GitHub_Actions-464646?logo=GitHub)](https://docs.github.com/en/actions)

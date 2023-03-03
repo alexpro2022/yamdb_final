@@ -1,4 +1,4 @@
-name: YAMDB_FINAL workflow
+name: DockerHub workflow
 
 on:
   push:
