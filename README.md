@@ -1,5 +1,5 @@
 # Проект: yamdb_final
-[![status](https://github.com/alexpro2022/yamdb_final/actions/workflows/yamdb_workflow_temp.yml/badge.svg)](https://github.com/alexpro2022/yamdb_final/actions)
+[![status](https://github.com/alexpro2022/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/alexpro2022/yamdb_final/actions)
 [![codecov](https://codecov.io/gh/alexpro2022/yamdb_final/branch/master/graph/badge.svg?token=L5AGH3TKOY)](https://codecov.io/gh/alexpro2022/yamdb_final)
 
 Данный проект демонстрирует возможность автоматичекого развертывания другого проекта (api_yamdb) с помощью Docker на удаленном сервере в Yandex.Cloud. 
