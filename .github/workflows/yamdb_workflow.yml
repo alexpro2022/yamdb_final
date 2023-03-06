@@ -41,7 +41,7 @@ jobs:
     needs: tests
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v3
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1 
       - name: Login to Docker 
@@ -54,7 +54,7 @@ jobs:
         with:
           context: api_yamdb
           push: true
-          tags: ${{ secrets.USER }}/api_yamdb:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull ${{ secrets.USER }}/api_yamdb
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/api_yamdb
 
             sudo docker-compose stop
             sudo docker-compose rm web
